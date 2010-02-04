@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>Goals Worksheet</title>
+    <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+  </head>
+      <body>
+      <div id="bodyContainer">
+            <p><a href="/"><img src="/images/OdysseyTitle.gif" alt="Odyssey Logo" /></a>Counseling Software (beta!)</p>
+            <h2>Defining Goals</h2>
+            <p><em>Use this worksheet to help clarify goals that you might have for your career and your education.</em></p>
+            <form action="/goalDefine" method="post">
+            <div class="worksheetSection">
+                  <div>
+                    <p>What characteristics of a <strong>job or career</strong> appeal to you? What do you want out of a job?<em> Consider factors like location, salary, growth potential, and management style</em>.</p>
+                    <textarea name="jobGoal" rows="8" cols="100">{{jobGoal}}</textarea>
+                  </div>
+                  <div>
+                    <p>What would your <b>ideal higher education school</b> look like? <em>Consider factors like size, geography, and academic offerings</em>.</p>
+                    <textarea name="schoolGoal" rows="8" cols="100">{{schoolGoal}}</textarea>
+                  </div>
+                  <div>
+                    <p>What would you like to accomplish with your GYC mentor?</p>
+                    <textarea name="gycGoal" rows="8" cols="100">{{gycGoal}}</textarea>
+                  </div>
+                  <br />
+            </div>
+            <br />
+            <div>
+                <input type="submit" value="Save this Worksheet">
+            </div>
+            </form>
+            <br />
+            <div class="footer">
+                <a href="/">Return to Main</a> | 
+                <a href="{{ logout_url }}">{{ logout_linktext }}</a>
+            </div>
+      </div>
+      </body>
+</html>

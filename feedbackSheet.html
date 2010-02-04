@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Send Feedback to GYC</title>
+    <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+  </head>
+      <body>
+        <div id="bodyContainer">
+         <p><a href="/"><img src="/images/OdysseyTitle.gif" alt="Odyssey Logo" /></a>Counseling Software (beta!)</p>
+         <h2>Send us a message</h2>
+         <p>The Guiding Youth to Careers program at Drexel's Center for Civic Engagement appreciates your feedback.</p>
+         <form action="/sendFeedback" method="post" />
+            <h3>Type of Message:</h3>
+            <input type="radio" name="messageType" value="featureRequest" Checked>Feature request</input>
+            <input type="radio" name="messageType" value="question">Question for a mentor</input>
+            <input type="radio" name="messageType" value="bugReport">Problem report</input>
+            <input type="radio" name="messageType" value="other">Other</input>
+            <br />
+            <h3>Message:</h3>
+            <textarea cols="80" rows="6" name="message"></textarea><br /><br />
+            <input type="submit" value="Send this Message" />
+         </form>
+          <div class="footer">
+            <a href="/">Return to Main</a> | 
+            <a href="{{ logout_url }}">{{ logout_linktext }}</a>
+        </div>
+        </div>
+              
+      </body>
+</html>

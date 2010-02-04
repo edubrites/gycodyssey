@@ -1,0 +1,168 @@
+<html>
+  <head>
+    <title>Extracurriculars</title>
+    <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+  </head>
+      <body>
+        <div id="bodyContainer">
+         <p><a href="/"><img src="/images/OdysseyTitle.gif" alt="Odyssey Logo" /></a>Counseling Software (beta!)</p>
+         <h2>Extracurriculars Worksheet</h2>
+         <p>You can use this sheet to keep track of activities that you have completed, are still involved in, 
+         or would like to pursue. <em>You can save up to five activities on this form. 
+         Place additional activities into the "Extra Notes" field at the bottom of the page</em>.</p>
+         <form action="/extracurricularWrite" method="post">
+          <div class="worksheetSection">
+            <h3>Activity 1:</h3>
+            <table>
+              <tr>
+                <td colspan="2">
+                  Activity: <input type="text" name="activityName1" value="{{ activityName1 }}"></input> 
+                  Date Started: <input type="text" name="dateStarted1" value="{{ dateStarted1 }}"></input> Date Ended: <input type="text" name="dateEnded1" value="{{ dateEnded1 }}"></input><br /><br />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Description/Why this Appeals to Me: <br /><textarea name="appeals1" rows="5" cols="40">{{appeals1}}</textarea><br /><br />
+                </td>
+                <td>
+                  References/Contact People: <br /><textarea name="references1" rows="5" cols="40">{{references1}}</textarea><br /><br />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Accomplishments/Awards/Things Learned: <br /><textarea name="accomplish1" rows="5" cols="40">{{accomplish1}}</textarea><br /><br />
+                </td>
+                <td>
+                  Additional Notes: <br /><textarea name="notes1" rows="5" cols="40">{{notes1}}</textarea><br /><br />
+                </td>
+              </tr>
+            </table>
+            <div><input type="submit" value="Save"></div>
+          </div>
+          <div class="worksheetSection">
+            <h3>Activity 2:</h3>
+            <table>
+              <tr>
+                <td colspan="2">
+                  Activity: <input type="text" name="activityName2" value="{{ activityName2 }}"></input> 
+                  Date Started: <input type="text" name="dateStarted2" value="{{ dateStarted2 }}"></input> Date Ended: <input type="text" name="dateEnded2" value="{{ dateEnded2 }}"></input><br /><br />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Description/Why this Appeals to Me: <br /><textarea name="appeals2" rows="5" cols="40">{{appeals2}}</textarea><br /><br />
+                </td>
+                <td>
+                  References/Contact People: <br /><textarea name="references2" rows="5" cols="40">{{references2}}</textarea><br /><br />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Accomplishments/Awards/Things Learned: <br /><textarea name="accomplish2" rows="5" cols="40">{{accomplish2}}</textarea><br /><br />
+                </td>
+                <td>
+                  Additional Notes: <br /><textarea name="notes2" rows="5" cols="40">{{notes2}}</textarea><br /><br />
+                </td>
+              </tr>
+            </table>
+            <div><input type="submit" value="Save"></div>
+          </div>
+          <div class="worksheetSection">
+            <h3>Activity 3:</h3>
+            <table>
+              <tr>
+                <td colspan="2">
+                  Activity: <input type="text" name="activityName3" value="{{ activityName3 }}"></input> 
+                  Date Started: <input type="text" name="dateStarted3" value="{{ dateStarted3 }}"></input> Date Ended: <input type="text" name="dateEnded3" value="{{ dateEnded3 }}"></input><br /><br />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Description/Why this Appeals to Me: <br /><textarea name="appeals3" rows="5" cols="40">{{appeals3}}</textarea><br /><br />
+                </td>
+                <td>
+                  References/Contact People: <br /><textarea name="references3" rows="5" cols="40">{{references3}}</textarea><br /><br />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Accomplishments/Awards/Things Learned: <br /><textarea name="accomplish3" rows="5" cols="40">{{accomplish3}}</textarea><br /><br />
+                </td>
+                <td>
+                  Additional Notes: <br /><textarea name="notes3" rows="5" cols="40">{{notes3}}</textarea><br /><br />
+                </td>
+              </tr>
+            </table>
+            <div><input type="submit" value="Save"></div>
+          </div>
+          <div class="worksheetSection">
+            <h3>Activity 4:</h3>
+            <table>
+              <tr>
+                <td colspan="2">
+                  Activity: <input type="text" name="activityName4" value="{{ activityName4 }}"></input> 
+                  Date Started: <input type="text" name="dateStarted4" value="{{ dateStarted4 }}"></input> Date Ended: <input type="text" name="dateEnded4" value="{{ dateEnded4 }}"></input><br /><br />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Description/Why this Appeals to Me: <br /><textarea name="appeals4" rows="5" cols="40">{{appeals4}}</textarea><br /><br />
+                </td>
+                <td>
+                  References/Contact People: <br /><textarea name="references4" rows="5" cols="40">{{references4}}</textarea><br /><br />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Accomplishments/Awards/Things Learned: <br /><textarea name="accomplish4" rows="5" cols="40">{{accomplish4}}</textarea><br /><br />
+                </td>
+                <td>
+                  Additional Notes: <br /><textarea name="notes4" rows="5" cols="40">{{notes4}}</textarea><br /><br />
+                </td>
+              </tr>
+            </table>
+            <div><input type="submit" value="Save"></div>
+          </div>
+          <div class="worksheetSection">
+            <h3>Activity 5:</h3>
+            <table>
+              <tr>
+                <td colspan="2">
+                  Activity: <input type="text" name="activityName5" value="{{ activityName5 }}"></input> 
+                  Date Started: <input type="text" name="dateStarted5" value="{{ dateStarted5 }}"></input> Date Ended: <input type="text" name="dateEnded5" value="{{ dateEnded5 }}"></input><br /><br />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Description/Why this Appeals to Me: <br /><textarea name="appeals5" rows="5" cols="40">{{appeals5}}</textarea><br /><br />
+                </td>
+                <td>
+                  References/Contact People: <br /><textarea name="references5" rows="5" cols="40">{{references5}}</textarea><br /><br />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Accomplishments/Awards/Things Learned: <br /><textarea name="accomplish5" rows="5" cols="40">{{accomplish5}}</textarea><br /><br />
+                </td>
+                <td>
+                  Additional Notes: <br /><textarea name="notes5" rows="5" cols="40">{{notes5}}</textarea><br /><br />
+                </td>
+              </tr>
+            </table>
+            <div><input type="submit" value="Save"></div>
+          </div>
+          <div class="worksheetSection">
+                <h3>Other Activities/Notes:</h3>
+                <textarea name="otherExtracurricNotes" rows="5" cols="80">{{otherExtracurricNotes}}</textarea>
+          </div>
+          <br />
+          <div><input type="submit" value="Save this Worksheet"></div>
+        </form>
+        <div class="footer">
+            <a href="/">Return to Main</a> | 
+            <a href="{{ logout_url }}">{{ logout_linktext }}</a>
+        </div>
+        </div>
+              
+      </body>
+</html>

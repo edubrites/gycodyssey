@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>GYC Odyssey</title>
+    <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+  </head>
+      <body>
+          <div id="bodyContainer">
+          <p><a href="/"><img src="/images/OdysseyTitle.gif" alt="Odyssey Logo" /></a>Counseling Software (beta!)</p>
+
+            <h2>{{ welcomeString }}</h2>
+            
+            <br />
+            <div class="mainContent">
+                <h3>Essentials</h3>
+                <ul>
+                <li><a href="{{ userInfo_url }}">Edit My Information</a></li>
+                <li><a href="/UserSummaryPage">View My Summary</a> <em>(Includes demographic information and worksheet contents)</em></li>
+                </ul>
+                <h3>Activities</h3>
+                <ul>
+                    {% for activity in commonActivityList %}
+                    <li><a href="{{activity.1}}">{{activity.0}}</a></li>
+                    {% endfor %}
+                </ul>
+                <ul>
+                    {% for value in gradeActivityList %}
+                    <li><a href="{{value.1}}">{{value.0}}</a></li>
+                    {% endfor %}
+                </ul>
+                <h3>Google Docs</h3>
+                <p>When you're ready to do advanced work on more sophisticated documents, go to your Google Docs account or browse through our list of templates to begin working on financial aid calculations, resumes, and more!</p>
+                <ul>
+                    <li><a href="http://docs.google.com" target="_blank">View My Google Docs</a></li>
+                    <li><a href="/GDocsTemplates">Create a New Document Using Templates</a></li>
+                </ul>
+                <h3>GYC Surveys</h3>
+                <p><em>There are no surveys to complete at this time.</em></p>
+                <h3>About Odyssey</h3>
+                <p>Odyssey is an experimental counseling application designed to take advantage of new web technologies in order to maximize higher education access for high school students.</p>
+                <p><a href="/AboutOdyssey">More information...</a></p>
+            </div>
+            <br />
+            <div class="footer">
+                <a href="{{ logout_url }}">{{ logout_linktext }}</a>
+            </div>
+          </div>
+      </body>
+</html>

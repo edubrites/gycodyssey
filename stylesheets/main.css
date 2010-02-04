@@ -1,0 +1,64 @@
+body {
+  font-family: Verdana, Helvetica, sans-serif;
+  background-color: white;
+  margin: 0; border: 0; padding: 0;
+}
+
+#bodyContainer {
+  margin-left: 150px;
+  margin-right: auto;
+  width: 1000px;
+}
+
+h1, h2, h3 {
+    color: #062149;
+}
+
+img {
+    border: none;
+}
+
+.footer {
+    text-align: right;
+    background-color: #EEEEEE;
+    border: 2px solid gray;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #062149;
+}
+a:visited {
+    color: #062149;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+textarea {
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 110%;
+}
+
+input {
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 110%;
+}
+
+.userSummary {
+  background-color: #EEEEEE;
+  border: 2px solid gray;
+  padding: 3px;
+}
+.mainContent {
+  background-color: #FFFFFF;
+  border: 2px solid gray;
+  padding: 3px;
+}
+
+.worksheetSection {
+  border: 2px solid gray;
+  padding: 5px;
+  margin-top: 5px;
+}

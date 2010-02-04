@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>My Notepad</title>
+    <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+  </head>
+      <body>
+        <div id="bodyContainer">
+         <p><a href="/"><img src="/images/OdysseyTitle.gif" alt="Odyssey Logo" /></a>Counseling Software (beta!)</p>
+        <h2>My GYC Notepad</h2>
+        <p>You can use this space to jot down information that doesn't quite fit anywhere else.</p>
+        <form action="/noteWrite" method="post">
+          <div>
+              <textarea name="notepadText" rows="15" cols="80">{% for note in user_note %}{{ note.content|escape }}{% endfor %}</textarea>
+          </div>
+          <div><input type="submit" value="Save Notepad"></div>
+        </form>
+      
+      <div class="footer">
+            <a href="/">Return to Main</a> | 
+            <a href="{{ logout_url }}">{{ logout_linktext }}</a>
+        </div>
+      </div>
+      </body>
+</html>

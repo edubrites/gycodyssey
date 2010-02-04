@@ -1,0 +1,107 @@
+<html>
+  <head>
+    <title>Personal Inventory Results</title>
+    <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+  </head>
+      <body>
+        <div id="bodyContainer">
+         <p><a href="/"><img src="/images/OdysseyTitle.gif" alt="Odyssey Logo" /></a>Counseling Software (beta!)</p>
+         <h2>Your Personality Inventory Results</h2>
+		 <p>Here is an analysis of the {{totalLetters}} characteristics you selected:</p>
+         <p><img src="{{gChartAPIString}}" alt = "Pie Chart" /></p>
+         <h2>Descriptions</h2>
+         <p><em>Click the links on the job descriptions to open up a new window with information from the Occupational Outlook Handbook. These are not an exhaustive list, just a set of samples to get you started.</em></p>
+         <div>
+             <div>
+                 <h3>Realistic - {{ RealPCT }}%</h3>
+                 <p>Is skilled at working with tools, mechanical or electrical drawings,
+        machines or plants and animals. Generally avoids social activities like teaching, healing and informing
+        others. Sees self as practical, mechanical and realistic.</p>
+                 <p><strong>Careers:</strong> 
+                    <a href="http://www.bls.gov/oco/ocos226.htm" target="_blank">Welders</a>,
+                    <a href="http://www.bls.gov/oco/oco20059.htm#51-9111" target="_blank">packaging machine operators (and other production occupations)</a>, 
+                    <a href="http://www.bls.gov/oco/ocos206.htm" target="_blank">electricians</a>,
+                    <a href="http://www.bls.gov/oco/ocos246.htm" target="_blank">truck drivers</a>, 
+                    <a href="http://www.bls.gov/oco/ocos243.htm" target="_blank">refuse collectors</a>
+                 </p>
+             </div>
+             <div style="background-color: #EEEEEE">
+                 <h3>Investigative - {{ InvestPCT }}%</h3>
+                 <p>Is good at understanding and solving science and math problems.
+        Generally avoids leading, selling or persuading people.
+        Sees self as precise, scientific and intellectual.</p>
+                <p><strong>Careers:</strong> 
+                <a href="http://www.bls.gov/oco/ocos079.htm" target="_blank">Pharmacists</a>,
+                <a href="http://www.bls.gov/oco/ocos302.htm" target="_blank">financial advisors</a>, 
+                <a href="http://www.bls.gov/oco/ocos100.htm" target="_blank">cardiovascular technologists</a>,
+                <a href="http://www.bls.gov/oco/ocos044.htm" target="_blank">operational research analysts</a>,
+                <a href="http://www.bls.gov/oco/ocos287.htm" target="_blank">computer systems analysts</a>,
+                <a href="http://www.bls.gov/oco/ocos027.htm" target="_blank">engineers</a>
+                 </p>
+             </div>
+             <div>
+                 <h3>Artistic - {{ ArtPCT}}%</h3>
+                 <p>Is strong in areas such as creative writing, drama, crafts, music or art.
+        Generally avoids highly ordered or repetitive activities.
+        Sees self as expressive, original and independent.</p>
+                 <p><strong>Careers:</strong> 
+                 <a href="http://www.bls.gov/oco/ocos068.htm" target="_blank">Librarians</a>, 
+                 <a href="http://www.bls.gov/oco/ocos090.htm" target="_blank">graphic designers</a>, 
+                 <a href="http://www.bls.gov/oco/ocos319.htm" target="_blank">technical writers</a>, 
+                 <a href="http://www.bls.gov/oco/ocos264.htm" target="_blank">photographers</a>, 
+                 <a href="http://www.bls.gov/oco/ocos038.htm" target="_blank">architects</a>, 
+                 <a href="http://www.bls.gov/oco/ocos320.htm" target="_blank">writers and authors</a>
+                 </p>
+             </div>
+             <div style="background-color: #EEEEEE">
+                 <h3>Social - {{ SocialPCT }}%</h3>
+                 <p>Is good at teaching, counseling, nursing or giving information.
+        Generally avoids using machines, tools or animals to achieve a goal.
+        Sees self as helpful, friendly and trustworthy.</p>
+                 <p><strong>Careers:</strong> 
+                 <a href="http://www.bls.gov/oco/ocos170.htm" target="_blank">Child care workers</a>, 
+                 <a href="http://www.bls.gov/oco/ocos318.htm" target="_blank">secondary school teachers</a>, 
+                 <a href="http://www.bls.gov/oco/ocos060.htm" target="_blank">social workers</a>, 
+                 <a href="http://www.bls.gov/oco/ocos302.htm" target="_blank">personal financial advisors</a>, 
+                 <a href="http://www.bls.gov/oco/ocos083.htm" target="_blank">registered nurses</a>
+                 </p>
+             </div>
+             <div>
+                 <h3>Enterprising - {{ EnterPCT }}%</h3>
+                 <p>Is good at leading people and selling things or ideas.
+        Generally avoids activities that require careful observation and
+        scientific, analytical thinking.
+        Sees self as energetic, ambitious and sociable.</p>
+                 <p><strong>Careers:</strong> 
+                 <a href="http://www.bls.gov/oco/ocos053.htm" target="_blank">Lawyers</a>, 
+                 <a href="http://www.bls.gov/oco/ocos005.htm" target="_blank">construction supervisors</a>, 
+                 <a href="http://www.bls.gov/oco/ocos023.htm" target="_blank">purchasing managers</a>, 
+                 <a href="http://www.bls.gov/oco/ocos027.htm" target="_blank">engineers</a>, 
+                 <a href="http://www.bls.gov/oco/ocos125.htm" target="_blank">claims adjusters</a>
+                 </p>
+             </div>
+             <div style="background-color: #EEEEEE">
+                 <h3>Conventional - {{ ConventPCT }}%</h3>
+                 <p>Is good at leading people and selling things or ideas.
+        Generally avoids activities that require careful observation and
+        scientific, analytical thinking. Sees self as energetic, ambitious and sociable.</p>
+                 <p><strong>Careers:</strong> 
+                 <a href="http://www.bls.gov/oco/ocos144.htm" target="_blank">Bookkeeping and accounting clerks</a>, 
+                 <a href="http://www.bls.gov/oco/ocos277.htm" target="_blank">billing clerks</a>, 
+                 <a href="http://www.bls.gov/oco/ocos006.htm" target="_blank">cost estimators</a>, 
+                 <a href="http://www.bls.gov/oco/ocos151.htm" target="_blank">legal secretaries</a>, 
+                 <a href="http://www.bls.gov/oco/ocos306.htm" target="_blank">computer support specialists</a>, 
+                 <a href="http://www.bls.gov/oco/ocos019.htm" target="_blank">management analysts</a>
+                 </p>
+             </div>
+             <div>
+             <p><em>Questions and characteristics courtesy of the Commonwealth of Pennsylvania's Center for Workforce Information and Analysis</em></p>
+             </div>
+          <div class="footer">
+            <a href="/">Return to Main</a> | 
+            <a href="{{ logout_url }}">{{ logout_linktext }}</a>
+        </div>
+        </div>
+              
+      </body>
+</html>

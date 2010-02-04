@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <title>User Information</title>
+    <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+  </head>
+      <body>
+      <div id="bodyContainer">
+      <p><a href="/"><img src="/images/OdysseyTitle.gif" alt="Odyssey Logo" /></a>Counseling Software (beta!) - An Application for High School Students</p>
+       <div class="userSummary">
+        <h2>Current User Information</h2>
+        <p><strong>Name</strong>: {{ firstName }} {{ lastName }}</p>
+        <p><strong>User Name</strong>: {{ username }}</p>
+        <p><strong>Phone Number</strong>: {{ phoneNumber }} </p>
+        <p><strong>School</strong>: {{ school }} </p>
+        <p><strong>Year</strong>: {{ grade }} </p>
+        <p style="align: right"><strong>{{ proceed_link }}</strong></p>
+       </div>
+        <h2>Enter/Edit Information for User: {{ username }}</h2>
+        <p><em>Note: A first and last name is required in order to proceed to the main activities page.</em></p>
+        <p>
+            <form action="/userEdit" method="post">
+                First Name:<input type="text" name="firstName" value="{{ firstName }}"></input>
+                Last Name:<input type="text" name="lastName" value="{{ lastName }}"></input><br />
+                Phone Number:<input type="text" name="phoneNumber" value="{{ phoneNumber }}"></input>
+                <div><br /><br />
+                School:
+                    <select name="school">
+                        <option value="UCHS" {{ uchs_selected }} >University City High School</option>
+                        <option value="West" {{ west_selected }} >West Philadelphia High School</option>
+                        <option value="West Auto Academy" {{ auto_selected }} >West Philadelphia Auto Academy</option>
+                        <option value="None" {{ none_selected }} >Not Applicable</option>
+                    </select>
+                </div>
+                <div><br /><br />
+                    Grade Level:
+                    <select name="grade">
+                        <option value="Freshman" {{ fresh_selected }}>Freshman</option>
+                        <option value="Sophomore" {{ soph_selected }}>Sophomore</option>
+                        <option value="Junior" {{ junior_selected }}>Junior</option>
+                        <option value="Senior" {{ senior_selected }}>Senior</option>
+                        <option value="None" {{ none_selected }}>Not Applicable</option>
+                    </select>
+                </div><br /><br />
+                <div><input type="submit" value="Save User Information"></div>
+            </form>
+        </p>
+        <p><em>Terms and Conditions Notice: GYC Odyssey is currently an experimental application that is designed to correspond with mentoring services from Drexel University's Center for Civic Engagement. We invite any high school students to use this product, but please be aware that your information might be seen by the developer in the course of maintenance or feature testing. GYC, the CCE, and Drexel will assume no responsibilities or liabilities for lost data, and this web application is without warranty. By saving your information and entering the main page, you agree that you understand this policy and trust GYC Odyssey with your data.</em></p>
+        <div class="footer">
+            <a href="/">Return to Main</a> | 
+            <a href="{{ logout_url }}">{{ logout_linktext }}</a>
+        </div>
+      </body>
+</html>

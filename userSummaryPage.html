@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>User Summary</title>
+    <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+  </head>
+      <body>
+        <div id="bodyContainer">
+         <p><a href="/"><img src="/images/OdysseyTitle.gif" alt="Odyssey Logo" /></a>Counseling Software (beta!)</p>
+         <h2>{{firstName}} {{lastName}}'s Summary</h2>
+         <div class="mainContent">
+            <h2>Basics</h2>
+            <ul>
+                <li>School: {{ school }}</li>
+                <li>Grade: {{ grade }}</li>
+                <li>Phone: {{ phoneNumber }}</li>
+            </ul>
+            <h2>Notepad</h2>
+            <p>
+                {% for note in notepad_contents %}
+                    {{ note.content|escape }}
+                {% endfor %}
+            </p>
+            <h2>Personality Inventory</h2>
+            <p>
+                <img src="{{personality_chart}}" alt="Pie Chart" />
+            </p>
+            <h2>Goals</h2>
+            <p><strong>Career:</strong> {{ jobGoal }}</p>
+            <p><strong>Schools:</strong> {{ schoolGoal }}</p>
+            <p><strong>GYC Goals:</strong> {{ gycGoal}}</p>
+            <h2>Extracurriculars</h2>
+            <p>{% for item in extracurriculars %}{{ item }}<br />{% endfor %}</p>
+         </div>
+         <br />
+        <div class="footer">
+            <a href="/">Return to Main</a> | 
+            <a href="{{ logout_url }}">{{ logout_linktext }}</a>
+        </div>
+        </div>
+              
+      </body>
+</html>
