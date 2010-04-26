@@ -7,7 +7,7 @@
         <div id="bodyContainer">
          <p><a href="/"><img src="/images/OdysseyTitle.gif" alt="Odyssey Logo" /></a>Counseling Software (beta!)</p>
         <h2>My GYC Notepad</h2>
-        <p>You can use this space to jot down information that doesn't quite fit anywhere else.</p>
+        <p>You can use this space to jot down information that does not fit anywhere else. Since this is a secure page, it is a great place to store important credentials like your FAFSA PIN or College Board login/password so that you don't forget them.</p>
         <form action="/noteWrite" method="post">
           <div>
               <textarea name="notepadText" rows="15" cols="80">{% for note in user_note %}{{ note.content|escape }}{% endfor %}</textarea>
